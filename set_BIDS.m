@@ -1,5 +1,6 @@
 %% Date : 22 - Feb - 2019
 % Author : Mario Gil 
+% Edited: Pablo Laso
 %
 % PROYECTO AGES-CM II
 % Preparing of BIDS 
@@ -21,7 +22,7 @@ anat     = strcat(filesep,'anat');
 T1w      = strcat(filesep,'T1w');
 T2w      = strcat(filesep,'T2w');
 func     = strcat(filesep,'func');
-%En este estudio solamente tenemos im·gene sfuncionales de estado de
+%En este estudio solamente tenemos im√°gene sfuncionales de estado de
 %reposo: restng state fMRI.
 rest     = strcat(filesep,'task-rest_bold');
 dwi      = strcat (filesep,'dwi');
@@ -125,7 +126,7 @@ for num=10:25
     %     end;
      %% 
      %En esta parte del codigo se reordenan las carpetas de fieldmap ya que 
-     %contienen todas las im·genes juntas. Se separan por Tiempo de Eco (TE1 y TE2) y por tipo de imagen (real, imaginaria, magnitud)
+     %contienen todas las im√°genes juntas. Se separan por Tiempo de Eco (TE1 y TE2) y por tipo de imagen (real, imaginaria, magnitud)
 
 %         if isdir ([main,filesep,Subj(i).name,filesep,Ses(p).name,fieldmap,fmap_rest_ri])
         if isdir ([main,filesep,Subj(i).name,filesep,Ses(p).name,fieldmap,fmap_rest_ri])
