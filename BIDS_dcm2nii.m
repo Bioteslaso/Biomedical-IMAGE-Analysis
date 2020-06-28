@@ -1,5 +1,6 @@
 %% Date : 18 - Oct - 2016
-% Author : Mario Gilipichis 
+% Author : Mario Gil
+% Editted: Pablo Laso (internship)
 %
 % In this scrip the main folder names will be treated as variables.
 %
@@ -91,7 +92,7 @@ for i = 1:length(Subj)
 
 %% ------------- ANAT -----------------------------------------------------
         if Ses_flag % Si no hay sesiones dentro de cada sujeto
-            if isdir([main,filesep,Subj(i).name,anat]) % Comprueba que haya adquisiciones anatómicas.
+            if isdir([main,filesep,Subj(i).name,anat]) % Comprueba que haya adquisiciones anatÃ³micas.
                 if not(isdir ([mainOut filesep Subj(i).name anat]))
                     mkdir([mainOut filesep Subj(i).name anat]);
                     command = strcat(DCM2NII,{' -f "'},Subj(i).name,{'_%f" -b n -z n -x y -o '},mainOut,filesep,Subj(i).name,anat,{' '},main,filesep,Subj(i).name,anat,T1w);
