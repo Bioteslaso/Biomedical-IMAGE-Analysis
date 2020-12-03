@@ -2,6 +2,7 @@
 """
 @author: lauranunez
 @eddited by: Mario Gil
+@eddited by: Pablo
 
 """
 #Import of needed interfaces---------------------------------------------------
